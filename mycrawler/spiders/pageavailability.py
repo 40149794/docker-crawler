@@ -8,9 +8,9 @@ class PageavailabilitySpider(CrawlSpider):
     handle_httpstatus_list = [400, 403, 404, 500, 502, 503, 504]
     name = 'pageavailability'
     # Replace the value with the real domain.
-    allowed_domains = ['example.com']
+    allowed_domains = ['quotes.toscrape.com']
     # Replace the value with the website URL to crawl from.
-    start_urls = ['http://www.example.com/']
+    start_urls = ['http://quotes.toscrape.com/']
     custom_settings = {
         'LOG_FILE': 'logs/pageavailability.log',
         'LOG_LEVEL': 'INFO'
